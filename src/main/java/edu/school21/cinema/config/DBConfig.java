@@ -12,10 +12,9 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 
-/** toDo посмотреть как проперти можно засунуть в папку webapp, а то он ищет в resources изнчально */
 @Configuration
 @ComponentScan("edu.school21.cinema")
-@PropertySource("classpath:application.properties")
+@PropertySource("file:src/main/webapp/WEB-INF/application.properties")
 public class DBConfig {
 
     @Autowired
